@@ -3,14 +3,14 @@
 **Centro de Investigación, Análisis e Inteligencia Territorial de San Patricio del Chañar**  
 Desarrollado por Elías Martínez · Ocarina Producciones.
 
-## Versión 0.5 — Nuevo norte
+## Versión 0.6 — Panorama territorial
 
 PROTOCOLO FANTASMA deja de ser solamente una mesa documental y pasa a organizar un centro de análisis territorial sobre la vida pública de San Patricio del Chañar: gestión municipal, decisiones, obras, servicios, actores, instituciones, declaraciones públicas, información y escenarios electorales.
 
 ### Módulos de trabajo
 
 - **Centro de análisis:** mapa operativo para entrar por tema.
-- **Expedientes:** preguntas de investigación y temas que requieren seguimiento.
+- **Archivo / expedientes:** preguntas de investigación y temas que requieren seguimiento.
 - **Actores:** personas e instituciones en sus roles públicos documentados.
 - **Gestión pública:** decisiones, obras, servicios e indicadores públicos.
 - **Escenario electoral:** candidaturas, propuestas y declaraciones públicas disponibles.
@@ -48,7 +48,7 @@ No cargar información confidencial, datos personales sensibles ni material obte
 - Mapa operativo visual e interactivo en la portada.
 - Navegación adaptable a dispositivos móviles.
 
-## Versión 0.3
+## Versión 0.4\n\n- Mapa operativo visual e interactivo en la portada.\n- Navegación adaptable a dispositivos móviles.\n\n## Versión 0.3
 
 - Matriz de verificación, cronología, procedencia, citas y relación entre registros.
 - Búsqueda, edición, eliminación e importación/exportación JSON.
