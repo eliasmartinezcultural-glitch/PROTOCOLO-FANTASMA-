@@ -1,5 +1,9 @@
 # PROTOCOLO FANTASMA — Laboratorio de investigación
 
+![Portada conceptual del observatorio](atlas/portada-observatorio.svg)
+
+> Ilustración vectorial conceptual, no fotografía documental. La aplicación principal permanece congelada mientras esta capa de investigación crece.
+
 Este directorio inaugura la capa de investigación documental. **No modifica la estructura ni la funcionalidad de `index.html`**. Se trabaja en la rama `profundizacion-observatorio`; la rama `base-congelada-v0.7` conserva una referencia separada de la versión anterior.
 
 ## Expedientes iniciales
@@ -9,6 +13,9 @@ Este directorio inaugura la capa de investigación documental. **No modifica la 
 3. [Escenario político local — corte al 12 de octubre de 2026](03-escenario-politico-octubre-2026.md)
 4. [Modelo de datos y visualizaciones](04-modelo-de-datos-y-visualizaciones.md)
 5. [Finanzas, rendición de cuentas y obras](05-finanzas-rendicion-y-obras.md)
+6. [Actores, conflictos y agenda pública](06-actores-conflictos-y-agenda-publica.md)
+7. [Sondeo social: metodología y cuestionario](07-sondeo-social-metodologia-y-cuestionario.md)
+8. [Dirección de arte y atlas visual](08-direccion-de-arte-y-atlas-visual.md)
 
 ## Método
 
@@ -18,6 +25,13 @@ Este directorio inaugura la capa de investigación documental. **No modifica la 
 - No se inventan índices de aprobación ni “temperatura social” representativa a partir de pocas entrevistas.
 - Se documentan actos públicos, decisiones y relaciones políticas públicas verificables; no se registran datos privados ni rumores personales como hechos.
 - La visualización futura debe expresar también vacíos, desacuerdos y nivel de confianza.
+
+## Actualización de agenda — octubre de 2026
+
+- La prensa regional informa sobre la adjudicación del Centro Deportivo Comunitario por $4.360.200.000 y plazo de 365 días; el Decreto 1566/2026 es la fuente primaria para el monto y las condiciones de adjudicación.
+- Se abrió una línea documental sobre radares/fotomultas, con foco en contratos, pagos, rendición, observaciones del Tribunal de Cuentas y descargos.
+- Se abrió una línea documental sobre la investigación judicial reportada en torno a una ordenanza de tierras municipales; se exige verificar estado procesal y documentos públicos antes de formular conclusiones.
+- Se incorporó un diseño metodológico para sondeo social exploratorio y una propuesta de atlas visual.
 
 ## Estado
 
