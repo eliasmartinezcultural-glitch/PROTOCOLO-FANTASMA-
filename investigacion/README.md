@@ -19,6 +19,7 @@ Este directorio contiene la capa documental del observatorio. **No modifica la e
 9. [Tablero político 2027: escenarios, actores y variables](09-tablero-2027-escenarios-y-actores.md)
 10. [Agenda de debates incómodos y preguntas públicas](10-agenda-de-debates-incómodos.md)
 11. [Matriz de expedientes y pedidos de información](11-matriz-de-expedientes-y-pedidos-de-informacion.md)
+12. [Protocolo de producción editorial: del dato al debate](12-protocolo-de-produccion-editorial.md)
 
 ## Qué hay que vigilar ahora
 
