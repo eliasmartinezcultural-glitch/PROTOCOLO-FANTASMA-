@@ -7,6 +7,8 @@ Este directorio inaugura la capa de investigación documental. **No modifica la 
 1. [Mapa de fuentes y protocolo de evidencia](01-mapa-de-fuentes.md)
 2. [Carta Orgánica y expediente de las 42 viviendas](02-carta-organica-y-caso-42-viviendas.md)
 3. [Escenario político local — corte al 12 de octubre de 2026](03-escenario-politico-octubre-2026.md)
+4. [Modelo de datos y visualizaciones](04-modelo-de-datos-y-visualizaciones.md)
+5. [Finanzas, rendición de cuentas y obras](05-finanzas-rendicion-y-obras.md)
 
 ## Método
 
