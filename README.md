@@ -2,6 +2,13 @@
 
 Mesa de investigación de Ocarina Producciones.
 
+## Versión 0.4
+
+- Mapa operativo visual e interactivo en la portada: pregunta → fuentes → contraste → seguimiento → cronología.
+- Cada etapa abre directamente su sección de trabajo.
+- Navegación móvil corregida para que las secciones sigan visibles y legibles.
+- Mantiene matriz de verificación, cronología, búsqueda, fichas y copias JSON.
+
 ## Versión 0.3
 
 - Expedientes, fuentes, hipótesis y seguimiento.
