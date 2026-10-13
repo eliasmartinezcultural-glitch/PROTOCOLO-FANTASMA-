@@ -1,34 +1,31 @@
 # PROTOCOLO FANTASMA
 
-Mesa de investigación y análisis de Ocarina Producciones.
+Mesa de investigación de Ocarina Producciones.
 
-## Estado
-Versión inicial estática **v0.1** para GitHub Pages. Incluye:
-- Pantalla de acceso por clave.
-- Panel de operaciones adaptable a computadora y celular.
+## Versión 0.3
+
 - Expedientes, fuentes, hipótesis y seguimiento.
-- Búsqueda y creación de registros.
-- Expediente inicial **EXPEDIENTE CHAÑAR**.
-- Método para distinguir hechos verificados, declaraciones, hipótesis y percepción social.
-- Sin publicación automática de hallazgos.
+- Matriz de verificación para afirmaciones e hipótesis.
+- Cronología ordenada por fecha del hecho o documento.
+- Fichas con procedencia, enlace, cita, clasificación y próximo paso.
+- Relación entre registros.
+- Búsqueda, edición, eliminación e importación/exportación JSON.
+- Interfaz adaptable a computadora y celular.
 
-## Importante: la clave no equivale a privacidad real
-Esta es una maqueta estática. La clave se valida en el navegador y los registros se guardan en el almacenamiento local de ese navegador. **No es autenticación real ni protección de datos.** Cualquier persona con acceso al código publicado puede inspeccionar la aplicación y saltarse la pantalla de acceso. Los registros no se sincronizan entre dispositivos.
+## Importante
 
-Por eso, no cargues documentos confidenciales, datos personales sensibles, fuentes que requieran protección ni material reservado. Para una protección real hace falta un servicio de autenticación aplicado en servidor/proxy y almacenamiento privado. Nunca publiques una contraseña real en el código.
+Esta aplicación guarda registros en el almacenamiento local del navegador. No sincroniza datos entre dispositivos. La pantalla de acceso no es una barrera de seguridad real porque el código se descarga al navegador y el repositorio es público.
 
-## Activar GitHub Pages
-1. Abrí el repositorio en GitHub.
-2. Entrá en **Settings → Pages**.
-3. En **Build and deployment**, seleccioná **Deploy from a branch**.
-4. Elegí la rama predeterminada y la carpeta **/(root)**.
-5. Guardá y esperá a que GitHub informe la URL del sitio.
+No usar esta versión para información confidencial. Trabajar con fuentes públicas y materiales que se puedan manejar de forma autorizada. Las copias JSON también pueden contener todo lo ingresado.
 
-Activar Pages puede hacer que la aplicación sea visible públicamente. La clave de esta versión solo funciona como barrera visual de demostración.
+Para convertirla en un sistema privado real se necesitará autenticación y almacenamiento protegidos del lado del servidor.
 
-## Método de investigación
-- Diferenciar hechos documentados, declaraciones, hipótesis y percepciones.
-- Registrar fuente, fecha, contexto y grado de verificación.
-- No convertir rumores en hechos.
-- Usar fuentes públicas y material obtenido de forma autorizada.
-- Revisar cualquier hallazgo antes de compartirlo.
+## GitHub Pages
+
+En GitHub: Settings, Pages, Deploy from a branch, rama main y carpeta /(root). Guardar y esperar que GitHub indique la URL. Publicar la página no hace privados los datos.
+
+## Método
+
+Separar hechos documentados, declaraciones, hipótesis y percepciones. Registrar el origen y la fecha de cada dato. No presentar preguntas ni rumores como hechos. Contrastar fuentes y anotar límites, contradicciones y tareas pendientes.
+
+Desarrollado por Elías Martínez · Ocarina Producciones
