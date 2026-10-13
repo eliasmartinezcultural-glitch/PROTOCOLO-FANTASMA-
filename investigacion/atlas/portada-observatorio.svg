@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PROTOCOLO FANTASMA — Observatorio de San Patricio del Chañar</title>
+<desc id="desc">Ilustración editorial vectorial del paisaje patagónico, viñedos, río y nodos de investigación pública. No representa una fotografía ni un hecho real específico.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071522"/><stop offset=".62" stop-color="#142b3a"/><stop offset="1" stop-color="#203b43"/></linearGradient>
+ <linearGradient id="river" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#45b9c8" stop-opacity=".8"/><stop offset="1" stop-color="#1a6b86" stop-opacity=".25"/></linearGradient>
+ <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c7b28a" stop-opacity=".9"/><stop offset="1" stop-color="#665b4c" stop-opacity=".5"/></linearGradient>
+ <pattern id="rows" width="34" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)"><path d="M2 0V24" stroke="#b7c5a0" stroke-opacity=".3" stroke-width="3"/></pattern>
+ <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#7ba1b0" stroke-opacity=".09" stroke-width="1"/></pattern>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<circle cx="1270" cy="180" r="108" fill="#d6c29c" opacity=".12"/><circle cx="1270" cy="180" r="66" fill="#d6c29c" opacity=".08"/>
+<path d="M0 395L120 330 230 354 350 260 470 324 610 235 735 305 865 230 1000 300 1140 245 1275 310 1405 220 1600 295V900H0Z" fill="#203d48"/>
+<path d="M0 465L180 390 330 430 500 345 650 420 820 330 1000 420 1170 355 1350 420 1510 345 1600 385V900H0Z" fill="#344d50"/>
+<path d="M0 560Q210 500 400 575T800 555T1200 560T1600 500V900H0Z" fill="url(#sand)"/>
+<path d="M-20 665C220 575 320 730 530 660S800 585 965 670 1260 760 1620 610V900H-20Z" fill="url(#river)"/>
+<path d="M-20 665C220 575 320 730 530 660S800 585 965 670 1260 760 1620 610" fill="none" stroke="#8ce3e8" stroke-opacity=".65" stroke-width="3"/>
+<path d="M0 610L520 520 760 565 520 900H0Z" fill="#5c6b4d" opacity=".9"/><path d="M0 610L520 520 760 565 520 900H0Z" fill="url(#rows)"/>
+<path d="M950 595L1600 470V900H1060Z" fill="#7d745a" opacity=".65"/><path d="M950 595L1600 470V900H1060Z" fill="url(#rows)"/>
+<g fill="none" stroke="#62d3df" stroke-width="2" stroke-opacity=".6">
+ <path d="M1040 210L1170 310 1360 260 1450 390 1270 470 1110 400 1040 210"/>
+ <path d="M1170 310L1200 170 1360 260 1490 190"/>
+ <path d="M1110 400L980 330 1040 210"/>
+ <path d="M1270 470L1380 570 1510 520"/>
+</g>
+<g fill="#f2c47c" stroke="#f2c47c" stroke-width="2" filter="url(#glow)">
+ <circle cx="1040" cy="210" r="7"/><circle cx="1170" cy="310" r="6"/><circle cx="1360" cy="260" r="8"/><circle cx="1450" cy="390" r="5"/><circle cx="1270" cy="470" r="7"/><circle cx="1110" cy="400" r="5"/><circle cx="1200" cy="170" r="5"/><circle cx="1490" cy="190" r="6"/><circle cx="980" cy="330" r="5"/><circle cx="1380" cy="570" r="6"/><circle cx="1510" cy="520" r="5"/>
+</g>
+<rect x="70" y="70" width="780" height="590" rx="22" fill="#07131e" fill-opacity=".84" stroke="#8ec8d2" stroke-opacity=".3"/>
+<text x="112" y="130" font-family="Arial,Helvetica,sans-serif" font-size="20" letter-spacing="5" fill="#8ee4e8">OBSERVATORIO TERRITORIAL · NEUQUÉN</text>
+<text x="108" y="235" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="700" fill="#f5f0e6">PROTOCOLO</text>
+<text x="108" y="320" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="700" fill="#f5f0e6">FANTASMA</text>
+<rect x="110" y="357" width="100" height="5" rx="2" fill="#f2c47c"/>
+<text x="110" y="415" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#c9d8da">San Patricio del Chañar</text>
+<text x="110" y="460" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#9db6bf">POLÍTICA · GESTIÓN · TERRITORIO · SOCIEDAD</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#e7ece8">
+ <rect x="110" y="520" width="190" height="48" rx="8" fill="#173c4a" stroke="#59c8d4" stroke-opacity=".7"/><text x="132" y="550">DOCUMENTOS</text>
+ <rect x="315" y="520" width="170" height="48" rx="8" fill="#293c40" stroke="#d2b37c" stroke-opacity=".7"/><text x="338" y="550">ACTORES</text>
+ <rect x="500" y="520" width="230" height="48" rx="8" fill="#293c40" stroke="#d2b37c" stroke-opacity=".7"/><text x="523" y="550">PULSO SOCIAL</text>
+</g>
+<text x="110" y="615" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#9eb5bb">Ilustración conceptual · no es una fotografía documental</text>
+<g font-family="Arial,Helvetica,sans-serif" fill="#e8eee8">
+ <text x="1110" y="740" font-size="18" letter-spacing="3">EVIDENCIA ANTES QUE RUMOR</text>
+ <text x="1110" y="775" font-size="15" fill="#b7c8c8">Datos · fuentes · preguntas abiertas</text>
+</g>
+</svg>
