@@ -20,6 +20,7 @@ Este directorio contiene la capa documental del observatorio. **No modifica la e
 10. [Agenda de debates incómodos y preguntas públicas](10-agenda-de-debates-incómodos.md)
 11. [Matriz de expedientes y pedidos de información](11-matriz-de-expedientes-y-pedidos-de-informacion.md)
 12. [Protocolo de producción editorial: del dato al debate](12-protocolo-de-produccion-editorial.md)
+13. [Finanzas municipales y asistencia provincial](13-finanzas-municipales-y-asistencia-provincial.md)
 
 ## Qué hay que vigilar ahora
 
@@ -28,6 +29,7 @@ Este directorio contiene la capa documental del observatorio. **No modifica la e
 - **Centro Deportivo Comunitario:** contrato, anticipo, inicio, certificados, modificaciones y mantenimiento.
 - **Tierras fiscales:** inventario, criterios, expedientes, controles y estado de actuaciones reportadas.
 - **Presupuesto y rendición:** comparar aprobado, recaudado, ejecutado, pagado y avance físico.
+- **Asistencia provincial:** distinguir aportes reintegrables, no reintegrables, anticipos de coparticipación, descuentos futuros y rendiciones.
 - **Gas y servicios:** convenios, desembolsos, conexiones, rendiciones y reintegros.
 - **Club San Patricio:** convenio firmado, obligaciones, uso del predio y acceso comunitario.
 - **Seguridad:** cifras con período, universo, clasificación y metodología, sin estigmatizar barrios.
