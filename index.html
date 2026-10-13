@@ -141,6 +141,7 @@ function renderPulse(){
 }
 document.getElementById("addPulse")?.addEventListener("click",()=>openModal(null,"ENTREVISTA"));
 document.getElementById("viewPulse")?.addEventListener("click",()=>setPage("Pulso social"));
-\nfunction notify(s){const t=document.getElementById("toast");t.textContent=s;t.classList.remove("hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.add("hidden"),3200)}
+
+function notify(s){const t=document.getElementById("toast");t.textContent=s;t.classList.remove("hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.add("hidden"),3200)}
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();closeDetail()}});if(sessionStorage.getItem("pf_session")==="active")showApp();
 </script></body></html>
