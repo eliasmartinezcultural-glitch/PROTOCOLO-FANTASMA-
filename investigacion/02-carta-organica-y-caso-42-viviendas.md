@@ -10,7 +10,7 @@ Fuentes de entrada:
 - [Publicación en el Boletín Oficial provincial, 13 de febrero de 2004](https://boficial.neuquen.gov.ar/Boletines/bo04021302862a.pdf)
 - [Índice de normas municipales del Poder Judicial de Neuquén](https://www.jusneuquen.gov.ar/legislacion-municipal/)
 
-La publicación del Boletín Oficial identifica en su texto inicial la denominación municipal y el alcance territorial (artículos 1 y 7) y establece una regla de supremacía normativa para materias de competencia municipal (artículo 6). Antes de emitir conclusiones sobre procedimientos concretos, se debe obtener y cotejar el documento íntegro vigente y sus posibles reformas.
+La publicación del Boletín Oficial identifica en su texto inicial la denominación municipal y el alcance territorial (artículos 1 y 7) y establece una regla de supremacía normativa para materias de competencia municipal (artículo 6). El texto oficial indexado también permite identificar referencias a los artículos 59 inciso f (promulgación, publicación y cumplimiento de ordenanzas), 64 (presentación de la rendición de cuentas antes del 31 de marzo), 90 (atribuciones del Concejo, incluidas funciones presupuestarias) y 161–162 (reglas electorales). Los artículos 161–162 describen la intervención de la Junta Electoral Municipal, el distrito electoral único, el voto directo, secreto y obligatorio y la convocatoria ordinaria conjunta con elecciones provinciales; cualquier aplicación actual debe comprobar el texto integral vigente y posibles reformas. Antes de emitir conclusiones sobre procedimientos concretos, se debe obtener y cotejar el documento íntegro vigente.
 
 ### Lectura por capítulos que debe desarrollarse
 
@@ -58,7 +58,9 @@ Todo lo anterior es **reconstrucción periodística pendiente de cotejo document
 7. ¿Existe dictamen jurídico, resolución administrativa o decisión judicial posterior?
 8. ¿Qué terreno se cedería, bajo qué condiciones y con qué mecanismo de selección?
 9. ¿Cuál es el estado material del proyecto: planificación, financiamiento, licitación, obra iniciada o etapa pendiente?
-10. ¿Qué datos oficiales existen sobre demanda habitacional y cuántas familias cumplen los requisitos del programa?
+10. ¿Cómo se articula el expediente con las atribuciones del Concejo y del Ejecutivo que surgen de los artículos 59, 64 y 90, y con los requisitos de publicación y vigencia?
+11. ¿Qué documentación permite comprobar que el procedimiento observado es el vigente y no una versión anterior de la norma?
+12. ¿Qué datos oficiales existen sobre demanda habitacional y cuántas familias cumplen los requisitos del programa?
 
 ### Documentos a conseguir
 
