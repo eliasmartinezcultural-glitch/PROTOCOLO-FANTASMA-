@@ -389,7 +389,7 @@ img{max-width:100%}
 }
 
 /* CONSOLA DEL FUNDADOR · ADMINISTRACIÓN LOCAL */
-#founderEntry{display:none}.founder-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#founderEntry{display:flex!important;grid-column:1/-1;min-height:auto!important;align-items:center;gap:8px;padding:11px 15px!important;border:1px dashed #8b7951!important;background:linear-gradient(100deg,#1b2926,#10191f)!important;color:#f1d28e!important;text-align:left!important;box-shadow:inset 3px 0 #d8b875}.founder-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 #founderLock{position:fixed;inset:0;z-index:10000;background:#030809ed;display:grid;place-items:center;padding:16px}
 #founderLock.hidden{display:none!important}.founder-lock-card{width:min(100%,420px);background:#101b20;border:1px solid #657d69;border-radius:18px;padding:24px}
 .founder-lock-card input{width:100%;padding:12px;border-radius:9px;border:1px solid #354a4e;background:#071114;color:#f1f3ed;margin:10px 0}
@@ -752,7 +752,7 @@ document.getElementById('founderLockForm').addEventListener('submit',async e=>{e
 document.getElementById('founderForm').addEventListener('submit',e=>{e.preventDefault();const title=document.getElementById('founderTitle').value.trim(),body=document.getElementById('founderBody').value.trim(),source=document.getElementById('founderSource').value.trim();if(!title||!body)return;const all=notes();all.push({id:Date.now().toString(),title,body,source,date:new Date().toLocaleDateString('es-AR')});saveNotes(all);e.target.reset();document.getElementById('founderStatus').textContent='Ficha guardada en este navegador.';renderNotes();founderRender()});
 document.getElementById('founderSearch').addEventListener('input',founderRender);
 document.getElementById('founderExport').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(notes(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='protocolo-fantasma-fichas-locales.json';a.click();URL.revokeObjectURL(url)});
-document.getElementById('founderClose').addEventListener('click',()=>{document.getElementById('founderConsole').classList.add('hidden');founderEntry.style.display='none';document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x.dataset.tab==='panorama'));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('hidden',v.id!=='panorama'));window.scrollTo({top:0,behavior:'smooth'})});
+document.getElementById('founderClose').addEventListener('click',()=>{document.getElementById('founderConsole').classList.add('hidden');founderEntry.style.display='flex';document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x.dataset.tab==='panorama'));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('hidden',v.id!=='panorama'));window.scrollTo({top:0,behavior:'smooth'})});
 document.getElementById('founderLock').addEventListener('click',e=>{if(e.target===founderLock)founderLock.classList.add('hidden')});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')founderLock.classList.add('hidden')});
 const sourceOverlay=document.getElementById('sourceOverlay');
