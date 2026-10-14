@@ -331,6 +331,63 @@ body.sourceOpen{overflow:hidden}
 @media(max-width:390px){.opsMetric>b{font-size:25px}.opsMetricAction>b{font-size:15px}.opsMetric small{font-size:9px}.opsConsoleTop{align-items:flex-start}.sourceModalTop{flex-direction:column}.sourceModalTop p{max-width:none}.sourceClose{align-self:flex-start}.sourceModalMeta{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.opsLight{animation:none}}
 
+
+/* AJUSTE DE ROBUSTEZ VISUAL · V1 COMPLETA · NO ALTERA LA ESTRUCTURA NI LOS FLUJOS */
+:root{scrollbar-color:#36534d #091215;scrollbar-width:thin}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-width:320px;overflow-wrap:anywhere}
+button,input,textarea,select{max-width:100%;touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid #f0c879;outline-offset:3px}
+img{max-width:100%}
+.visual-photo img{background:linear-gradient(135deg,#132326,#0b1519);color:#c4d2cc}
+.card,.panel,.archiveCard,.source,.record,.opsMetric{min-width:0}
+.grid,.columns,.visual-grid,.nav,.opsConsole,.opsMetricGrid{min-width:0}
+.archiveReader,.readerBody,.sourceModal,.sourceModalBody{max-width:100%;overflow-wrap:anywhere}
+.sourceFrame,iframe{max-width:100%}
+@media(max-width:760px){
+ .wrap{width:100%;padding:12px}
+ .top{align-items:flex-start;flex-wrap:wrap}
+ .status{white-space:normal;max-width:100%}
+ .hero{min-height:0;padding:25px 18px;background-position:58% center}
+ .hero h1{font-size:clamp(37px,10.7vw,54px);line-height:1.02}
+ .hero p{font-size:14px;line-height:1.7}
+ .heroFoot{gap:7px}
+ .heroFoot span{font-size:9px;max-width:100%}
+ .nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .nav button{min-height:68px;padding:12px 10px}
+ .sectionHead{gap:8px}
+ .sectionHead h2{font-size:clamp(25px,7vw,32px)}
+ .grid,.columns{grid-template-columns:minmax(0,1fr)}
+ .card,.panel{padding:15px}
+ .visual-photo img{height:clamp(155px,48vw,220px)}
+ .timeline{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .toolbar .btn{flex:1 1 auto}
+ .archiveReader{padding:14px!important}
+ .sourceFrame{height:58vh!important}
+}
+@media(max-width:360px){
+ .brand strong{font-size:10px;letter-spacing:.12em}
+ .brand small{font-size:8px;letter-spacing:.07em}
+ .sigil{width:40px;height:40px}
+ .nav button{padding:10px 8px}
+ .nav b{font-size:12px}
+ .hero h1{font-size:36px}
+ .timeline{grid-template-columns:minmax(0,1fr)}
+ .visual-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media(min-width:761px) and (max-width:1050px){
+ .wrap{padding:20px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero{min-height:300px}
+}
+@media(hover:none){
+ .card:hover,.nav button:hover,.btn:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+
 </style></head><body><div id="login" class="wrap login"><div class="brand"><div class="sigil">PF</div><div><strong>PROTOCOLO FANTASMA</strong><small>INVESTIGACIÓN TERRITORIAL · CHañAR</small></div></div><h1>Entrar al centro.</h1><p>Acceso de conveniencia para esta interfaz. No es una barrera de seguridad real: el sitio estático y sus archivos son públicos.</p><form id="loginForm"><input id="password" type="password" autocomplete="current-password" placeholder="Clave de acceso" aria-label="Clave de acceso" required><button class="btn primary" style="width:100%">Abrir el sistema →</button><div class="error" id="error"></div></form></div>
 <div id="app" class="wrap hidden"><header class="top"><div class="brand"><div class="sigil">PF</div><div><strong>PROTOCOLO FANTASMA</strong><small>OBSERVAR · DOCUMENTAR · CONTRASTAR</small></div></div><span class="status">● CENTRO ACTIVO · 13 OCT 2026</span></header>
 <section class="hero"><div class="eyebrow">SAN PATRICIO DEL CHAÑAR / INVESTIGACIÓN ABIERTA</div><h1>El territorio.<br><em>Las decisiones. La evidencia.</em></h1><p>Una página breve para investigar a fondo la política local, la gestión pública, los recursos y las voces de la comunidad. Sin ruido de menú. Cada pregunta debe conducir a documentos, datos y respuestas.</p><div class="heroFoot"><span>4 FUNCIONES</span><span>FUENTES ENLAZADAS</span><span>REGISTROS LOCALES</span><span>2026 → 2027</span></div></section>
