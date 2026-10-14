@@ -388,6 +388,12 @@ img{max-width:100%}
  *,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
 
+/* CONSOLA DEL FUNDADOR · ADMINISTRACIÓN LOCAL */
+#founderEntry{display:none}.founder-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#founderLock{position:fixed;inset:0;z-index:10000;background:#030809ed;display:grid;place-items:center;padding:16px}
+#founderLock.hidden{display:none!important}.founder-lock-card{width:min(100%,420px);background:#101b20;border:1px solid #657d69;border-radius:18px;padding:24px}
+.founder-lock-card input{width:100%;padding:12px;border-radius:9px;border:1px solid #354a4e;background:#071114;color:#f1f3ed;margin:10px 0}
+@media(max-width:650px){.founder-grid{grid-template-columns:minmax(0,1fr)}}
 </style></head><body><div id="login" class="wrap login"><div class="brand"><div class="sigil">PF</div><div><strong>PROTOCOLO FANTASMA</strong><small>INVESTIGACIÓN TERRITORIAL · CHañAR</small></div></div><h1>Entrar al centro.</h1><p>Acceso de conveniencia para esta interfaz. No es una barrera de seguridad real: el sitio estático y sus archivos son públicos.</p><form id="loginForm"><input id="password" type="password" autocomplete="current-password" placeholder="Clave de acceso" aria-label="Clave de acceso" required><button class="btn primary" style="width:100%">Abrir el sistema →</button><div class="error" id="error"></div></form></div>
 <div id="app" class="wrap hidden"><header class="top"><div class="brand"><div class="sigil">PF</div><div><strong>PROTOCOLO FANTASMA</strong><small>OBSERVAR · DOCUMENTAR · CONTRASTAR</small></div></div><span class="status">● CENTRO ACTIVO · 13 OCT 2026</span></header>
 <section class="hero"><div class="eyebrow">SAN PATRICIO DEL CHAÑAR / INVESTIGACIÓN ABIERTA</div><h1>El territorio.<br><em>Las decisiones. La evidencia.</em></h1><p>Una página breve para investigar a fondo la política local, la gestión pública, los recursos y las voces de la comunidad. Sin ruido de menú. Cada pregunta debe conducir a documentos, datos y respuestas.</p><div class="heroFoot"><span>4 FUNCIONES</span><span>FUENTES ENLAZADAS</span><span>REGISTROS LOCALES</span><span>2026 → 2027</span></div></section>
@@ -401,7 +407,7 @@ img{max-width:100%}
   </div>
   <div class="opsConsoleFoot"><span>◆ REGLA DE ORO: DIFERENCIAR HECHO, DECLARACIÓN E HIPÓTESIS.</span><span>ACTUALIZACIÓN EDITORIAL · 13.10.2026</span></div>
 </section>
-<nav class="nav" aria-label="Funciones principales"><button class="active" data-tab="panorama"><span class="n">01 / MIRAR</span><b>Panorama</b></button><button data-tab="gestion"><span class="n">02 / MEDIR</span><b>Gestión pública</b></button><button data-tab="politica"><span class="n">03 / ENTENDER</span><b>Política local</b></button><button data-tab="investigar"><span class="n">04 / PROFUNDIZAR</span><b>Investigación</b></button></nav>
+<nav class="nav" aria-label="Funciones principales"><button class="active" data-tab="panorama"><span class="n">01 / MIRAR</span><b>Panorama</b></button><button data-tab="gestion"><span class="n">02 / MEDIR</span><b>Gestión pública</b></button><button data-tab="politica"><span class="n">03 / ENTENDER</span><b>Política local</b></button><button data-tab="investigar"><span class="n">04 / PROFUNDIZAR</span><b>Investigación</b></button><button id="founderEntry" type="button"><span class="n">00 / RESTRINGIDO</span><b>Operaciones del fundador</b></button></nav>
 <main>
 <section id="panorama" class="view">
 <div class="sectionHead"><div><span class="eyebrow">01 / LA FOTO DEL MOMENTO</span><h2>Qué está sobre la mesa</h2></div><p>Primera lectura basada en fuentes públicas consultadas al 13 de octubre de 2026.</p></div>
@@ -654,7 +660,14 @@ img{max-width:100%}
   <div class="archiveMethod"><b>Regla editorial:</b> un documento prueba lo que dice, no necesariamente el resultado en la calle. Se registran por separado norma, anuncio, ejecución, pago, recepción y efecto sobre la comunidad. Las referencias de origen se conservan dentro de cada expediente; no hace falta abandonar esta página para leer la ficha de consulta.</div>
 </div>
 </section>
+<section id="founderConsole" class="view hidden"><div class="sectionHead"><div><span class="eyebrow">00 / CONSOLA RESERVADA</span><h2>Operaciones del fundador</h2></div><p>Administración editorial y archivo de trabajo de Elías Martínez.</p></div>
+<div class="notice"><b>Alcance:</b> las fichas se guardan en este navegador y no se sincronizan. Esta consola no identifica visitantes ni recibe estadísticas globales; para eso hace falta analítica externa con aviso de privacidad.</div>
+<div class="founder-grid">
+<article class="panel"><span class="eyebrow">01 / NUEVA INFORMACIÓN</span><h3>Agregar ficha de trabajo</h3><form id="founderForm"><input class="search" id="founderTitle" maxlength="180" required placeholder="Título de la ficha"><textarea id="founderBody" maxlength="12000" required placeholder="Información, preguntas pendientes y próximo paso"></textarea><input class="search" id="founderSource" type="url" placeholder="Fuente o enlace (opcional)"><button class="btn primary" type="submit">Guardar ficha local</button><p id="founderStatus" class="tiny" aria-live="polite"></p></form></article>
+<article class="panel"><span class="eyebrow">02 / ARCHIVO PERSONAL</span><h3>Buscar y administrar fichas</h3><input id="founderSearch" class="search" placeholder="Buscar fichas guardadas"><div id="founderNotes"></div><div class="toolbar"><button id="founderExport" class="btn" type="button">Exportar fichas JSON</button><button id="founderClose" class="btn" type="button">Cerrar consola</button></div></article>
+</div><div class="notice">Antes de convertir una ficha en contenido público, verificá la fuente, la fecha, la identidad de las personas mencionadas y el nivel de evidencia. Separá hechos, declaraciones e hipótesis.</div></section>
 </main>
+<div id="founderLock" class="hidden" role="dialog" aria-modal="true" aria-labelledby="founderLockTitle"><div class="founder-lock-card"><span class="eyebrow">ACCESO RESTRINGIDO · FUNDADOR</span><h2 id="founderLockTitle" style="font:normal 30px Georgia,serif">Consola de Elías</h2><form id="founderLockForm"><input id="founderPassword" type="password" autocomplete="off" required placeholder="Clave del fundador"><button class="btn primary" type="submit" style="width:100%">Desbloquear</button><div id="founderLockError" class="error" aria-live="polite"></div></form><button id="founderCancel" class="btn" type="button">Cancelar</button></div></div>
 <div class="sourceOverlay hidden" id="sourceOverlay" role="dialog" aria-modal="true" aria-labelledby="sourceModalTitle">
   <div class="sourceModal">
     <div class="sourceModalTop"><div><span class="eyebrow">VENTANA DE FUENTE · LECTURA SIN SALIR</span><h2 id="sourceModalTitle">Fuente documental</h2><p id="sourceModalHint">La referencia se abre en una ventana interna cuando el sitio de origen lo permite.</p></div><button class="btn sourceClose" id="sourceClose" type="button" aria-label="Cerrar ventana de fuente">Cerrar ×</button></div>
@@ -666,6 +679,7 @@ img{max-width:100%}
 <footer class="footnote"><span>PROTOCOLO FANTASMA · CENTRO DE INVESTIGACIÓN TERRITORIAL</span><span>Diseño y desarrollo: Elías Martínez · Ocarina Producciones</span><span>Fuentes consultadas: 13/10/2026</span></footer></div>
 <script>
 const PASS_HASH="c5e0602eb6692af40fdbf3176283662d0de825b5be612b3d0f7336ea2da29089";
+const FOUNDER_PASS_HASH="64bda7bb8b22dc594f3d2db78894ca121035f5451deba14e0b4666c3f235aba7";
 const login=document.getElementById('login'),app=document.getElementById('app');
 async function hash(s){const d=new TextEncoder().encode(s),b=await crypto.subtle.digest('SHA-256',d);return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
 function enter(){login.classList.add('hidden');app.classList.remove('hidden');try{if(sessionStorage.getItem('pf_session')==='active')return}catch(e){}}
@@ -729,6 +743,18 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!document.getElemen
 renderArchive();
 
 // CAPA DE OPERACIONES · PUERTAS INTERNAS PARA FUENTES
+const founderEntry=document.getElementById('founderEntry'),founderLock=document.getElementById('founderLock');
+function founderRender(){const q=(document.getElementById('founderSearch').value||'').toLowerCase().trim(),all=notes().filter(n=>(n.title+' '+n.body+' '+n.source).toLowerCase().includes(q));document.getElementById('founderNotes').innerHTML=all.slice().reverse().map(n=>'<div class="record"><strong>'+esc(n.title)+'</strong><p>'+esc(n.body)+'</p><div class="tiny">'+esc(n.date)+'</div><button class="btn" data-founder-delete="'+esc(n.id)+'" type="button">Eliminar ficha</button></div>').join('')||'<p class="tiny">No hay fichas guardadas.</p>';document.querySelectorAll('[data-founder-delete]').forEach(b=>b.addEventListener('click',()=>{if(confirm('¿Eliminar esta ficha local?')){saveNotes(notes().filter(n=>n.id!==b.dataset.founderDelete));renderNotes();founderRender()}}))}
+function founderShow(){document.querySelectorAll('[data-tab]').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('hidden',v.id!=='founderConsole'));founderEntry.style.display='block';founderRender();window.scrollTo({top:0,behavior:'smooth'})}
+founderEntry.addEventListener('click',()=>{document.getElementById('founderPassword').value='';document.getElementById('founderLockError').textContent='';founderLock.classList.remove('hidden');document.getElementById('founderPassword').focus()});
+document.getElementById('founderCancel').addEventListener('click',()=>founderLock.classList.add('hidden'));
+document.getElementById('founderLockForm').addEventListener('submit',async e=>{e.preventDefault();const b=e.submitter;b.disabled=true;try{if(await hash(document.getElementById('founderPassword').value)===FOUNDER_PASS_HASH){founderLock.classList.add('hidden');founderShow()}else document.getElementById('founderLockError').textContent='Clave incorrecta.'}catch(err){document.getElementById('founderLockError').textContent='No se pudo verificar la clave.'}finally{b.disabled=false}});
+document.getElementById('founderForm').addEventListener('submit',e=>{e.preventDefault();const title=document.getElementById('founderTitle').value.trim(),body=document.getElementById('founderBody').value.trim(),source=document.getElementById('founderSource').value.trim();if(!title||!body)return;const all=notes();all.push({id:Date.now().toString(),title,body,source,date:new Date().toLocaleDateString('es-AR')});saveNotes(all);e.target.reset();document.getElementById('founderStatus').textContent='Ficha guardada en este navegador.';renderNotes();founderRender()});
+document.getElementById('founderSearch').addEventListener('input',founderRender);
+document.getElementById('founderExport').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(notes(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='protocolo-fantasma-fichas-locales.json';a.click();URL.revokeObjectURL(url)});
+document.getElementById('founderClose').addEventListener('click',()=>{document.getElementById('founderConsole').classList.add('hidden');founderEntry.style.display='none';document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x.dataset.tab==='panorama'));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('hidden',v.id!=='panorama'));window.scrollTo({top:0,behavior:'smooth'})});
+document.getElementById('founderLock').addEventListener('click',e=>{if(e.target===founderLock)founderLock.classList.add('hidden')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')founderLock.classList.add('hidden')});
 const sourceOverlay=document.getElementById('sourceOverlay');
 const sourceFrame=document.getElementById('sourceFrame');
 let activeSourceUrl='';
