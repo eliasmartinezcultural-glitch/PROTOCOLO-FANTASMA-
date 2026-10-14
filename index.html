@@ -34,6 +34,77 @@
 .timeline-item a{font-size:9px;display:inline-block;margin-top:7px}
 @media(max-width:760px){.timeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.timeline:before{display:none}.timeline-item{border-left:1px solid #536f62;padding-left:12px}.timeline-dot{margin-left:-18px}}
 .record{padding:12px 0;border-bottom:1px solid #263937}.record:last-child{border:0}.record strong{font-size:12px}.record p{font-size:11px;color:#a8b9b1;margin:5px 0}.footnote{margin:28px 0 12px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#758c83;font-size:9px;letter-spacing:.05em}.hidden{display:none!important}.login{max-width:440px;margin:10vh auto;padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.login h1{font:normal 36px var(--serif)}.login p{color:var(--muted);font-size:12px}.login input{width:100%;padding:12px;border-radius:8px;border:1px solid var(--line);background:#081012;color:var(--text);margin:10px 0}.error{color:var(--red);font-size:11px;min-height:18px}@media(max-width:760px){.wrap{padding:12px}.top{padding-bottom:13px}.hero{padding:24px 19px;min-height:0}.hero h1{font-size:43px}.hero:after{right:-210px}.nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.nav button{padding:11px}.grid{grid-template-columns:1fr}.columns{grid-template-columns:1fr}.sectionHead{align-items:flex-start;flex-direction:column}.sectionHead p{text-align:left}.card{padding:15px}.section{margin:20px 0}.status{font-size:9px}}@media(min-width:761px) and (max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* CAPA VISUAL · EDICIÓN ESTÉTICA · ESTRUCTURA Y FUNCIONES PRESERVADAS */
+:root{--bg:#070b10;--panel:#0d151d;--panel2:#111f29;--line:#263b49;--text:#edf4f5;--muted:#9aaeb9;--gold:#e7b968;--mint:#71d7bf;--red:#ed9b8a}
+body{background:radial-gradient(ellipse at 12% 0%,#163d3c 0,transparent 28%),radial-gradient(ellipse at 95% 28%,#172b48 0,transparent 32%),linear-gradient(180deg,#070b10,#090f15 52%,#070b10);background-attachment:fixed}
+.wrap{max-width:1280px;padding:clamp(12px,2.3vw,30px)}
+.top{padding:12px 0 24px}
+.sigil{position:relative;border-radius:13px;background:linear-gradient(145deg,#f3d28c,#b78337);box-shadow:0 0 28px #e7b96826;font-size:19px}
+.brand strong{letter-spacing:.19em;font-size:11px}
+.status{background:#0d1e1e;border-color:#316158;box-shadow:inset 0 0 16px #70d8bf08;letter-spacing:.08em}
+.hero{isolation:isolate;min-height:340px;padding:clamp(26px,5.5vw,70px);border-radius:24px;border-color:#345a5b;background:linear-gradient(90deg,#071316f5 0%,#0b1b20e8 42%,#102b30a8 100%),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=85') center 46%/cover no-repeat;box-shadow:0 24px 70px #0006,inset 0 0 80px #061012}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#071014d9,transparent 75%),linear-gradient(90deg,#071014a8,transparent 100%);pointer-events:none}
+.hero:after{width:390px;height:390px;right:-90px;top:-140px;border-color:#b4d5d01f;box-shadow:0 0 0 35px #b4d5d00a,0 0 0 75px #b4d5d008,0 0 0 115px #b4d5d005}
+.eyebrow{letter-spacing:.2em;font-weight:700;text-shadow:0 1px 12px #0008}
+.hero h1{max-width:850px;font-size:clamp(42px,7vw,82px);line-height:.94;text-shadow:0 4px 25px #0008}
+.hero h1 em{color:#f0c879}
+.hero p{max-width:640px;color:#d0dedc;font-size:clamp(13px,1.3vw,16px);line-height:1.75}
+.heroFoot{gap:9px 18px;margin-top:30px}
+.heroFoot span{border:1px solid #8daea638;background:#0713168c;padding:7px 10px;border-radius:5px;backdrop-filter:blur(8px)}
+.nav{gap:10px;margin:16px 0 28px}
+.nav button{position:relative;overflow:hidden;border-radius:12px;padding:17px 15px;background:linear-gradient(140deg,#111d26,#0b131b);border-color:#2b414e;box-shadow:0 8px 24px #0002;transition:transform .22s,border-color .22s,background .22s}
+.nav button:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:#39545d;transition:background .2s}
+.nav button.active,.nav button:hover{transform:translateY(-2px);background:linear-gradient(140deg,#172d32,#101d27);border-color:#648d83;box-shadow:0 12px 30px #0003}
+.nav button.active:before,.nav button:hover:before{background:var(--gold)}
+.nav .n{font-size:9px;letter-spacing:.17em}
+.nav b{font-size:14px;letter-spacing:.015em}
+.section{margin:32px 0}
+.sectionHead{margin-bottom:17px}
+.sectionHead h2{font-size:clamp(26px,3vw,36px);letter-spacing:-.025em}
+.sectionHead p{line-height:1.7}
+.grid{gap:14px}
+.card,.panel{background:linear-gradient(145deg,#111d26f5,#0b131bf7);border-color:#293e4a;border-radius:16px;box-shadow:0 10px 30px #0000001a;transition:border-color .2s,transform .2s,box-shadow .2s}
+.card:hover{border-color:#54776f;box-shadow:0 16px 36px #0003;transform:translateY(-2px)}
+.card{padding:clamp(15px,1.8vw,23px)}
+.card .label{display:inline-block;color:#edc778;letter-spacing:.16em;line-height:1.6}
+.card h3{font-size:clamp(20px,2vw,25px);line-height:1.12;letter-spacing:-.025em}
+.card p{font-size:12px;line-height:1.8;color:#bac9d0}
+.card .foot{border-color:#293d49;line-height:1.8}
+.visual-photo{border-color:#36545b;border-radius:12px;box-shadow:0 8px 22px #0004}
+.visual-photo img{height:210px;filter:saturate(.95) contrast(1.04);transition:transform .55s,filter .4s}
+.visual-photo:hover img{transform:scale(1.045);filter:saturate(1.08) contrast(1.06)}
+.visual-photo figcaption{background:#09131ad9;letter-spacing:.025em}
+.data-viz{background:linear-gradient(145deg,#0a151d,#101f27);border-color:#2b4652;border-radius:12px;padding:15px}
+.data-viz-number{font-size:32px;color:#f0c879}
+.viz-track{height:8px;background:#1e3239}
+.viz-fill{background:linear-gradient(90deg,#52bda8,#e8c16f);box-shadow:0 0 12px #74d7b52c}
+.visual-stat{background:linear-gradient(145deg,#101f28,#0b151c);border-color:#2b424c}
+.visual-stat b{color:#f0c879}
+.pill{background:#102923;border-color:#37685a;color:#8ee0c9}
+.pill.warn{background:#2b2118;color:#f0c48d;border-color:#7e5f3b}
+.notice{background:linear-gradient(100deg,#16251f,#101c22);border-left-color:#e7b968;border-radius:0 12px 12px 0;line-height:1.85}
+.source{background:linear-gradient(135deg,#111f28,#0c151d);border-color:#2a414d}
+.source .num{font-size:15px}
+.item{border-color:#263b46}
+.btn{background:#14242b;border-color:#3b5661;border-radius:9px;transition:all .2s}
+.btn:hover{border-color:#e7b968;transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(135deg,#f1d18b,#d9a64f);box-shadow:0 5px 18px #d6a34b20}
+.search,textarea,.login input{background:#080f15;border-color:#2b414d;border-radius:10px}
+.search:focus,textarea:focus,.login input:focus{border-color:#d8b36d;box-shadow:0 0 0 3px #e7b96817}
+.login{background:linear-gradient(145deg,#111e27,#0b131b);border-color:#35505b;box-shadow:0 25px 80px #0006;position:relative;overflow:hidden}
+.login:before{content:"";display:block;height:3px;position:absolute;left:0;right:0;top:0;background:linear-gradient(90deg,#70d7bd,#e7b968,#5c8ca9)}
+.login h1{font-size:42px;letter-spacing:-.04em}
+.timeline:before{background:linear-gradient(90deg,#5f9988,#e7b968)}
+.timeline-dot{background:#edc778;box-shadow:0 0 0 1px #6c8a79,0 0 14px #e7b96838}
+.record{border-color:#263b46}
+.footnote{border-color:#293d49}
+a{color:#efc675;text-underline-offset:3px}
+a:hover{color:#fff0c5}
+::selection{background:#e7b968;color:#101820}
+@media(max-width:760px){.hero{min-height:320px;background-position:58% center}.hero h1{font-size:clamp(40px,11vw,56px)}.visual-photo img{height:185px}.nav button{padding:13px 11px}.nav b{font-size:13px}.section{margin:25px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
 </style></head><body><div id="login" class="wrap login"><div class="brand"><div class="sigil">PF</div><div><strong>PROTOCOLO FANTASMA</strong><small>INVESTIGACIÓN TERRITORIAL · CHañAR</small></div></div><h1>Entrar al centro.</h1><p>Acceso de conveniencia para esta interfaz. No es una barrera de seguridad real: el sitio estático y sus archivos son públicos.</p><form id="loginForm"><input id="password" type="password" autocomplete="current-password" placeholder="Clave de acceso" aria-label="Clave de acceso" required><button class="btn primary" style="width:100%">Abrir el sistema →</button><div class="error" id="error"></div></form></div>
 <div id="app" class="wrap hidden"><header class="top"><div class="brand"><div class="sigil">PF</div><div><strong>PROTOCOLO FANTASMA</strong><small>OBSERVAR · DOCUMENTAR · CONTRASTAR</small></div></div><span class="status">● CENTRO ACTIVO · 13 OCT 2026</span></header>
 <section class="hero"><div class="eyebrow">SAN PATRICIO DEL CHAÑAR / INVESTIGACIÓN ABIERTA</div><h1>El territorio.<br><em>Las decisiones. La evidencia.</em></h1><p>Una página breve para investigar a fondo la política local, la gestión pública, los recursos y las voces de la comunidad. Sin ruido de menú. Cada pregunta debe conducir a documentos, datos y respuestas.</p><div class="heroFoot"><span>4 FUNCIONES</span><span>FUENTES ENLAZADAS</span><span>REGISTROS LOCALES</span><span>2026 → 2027</span></div></section>
